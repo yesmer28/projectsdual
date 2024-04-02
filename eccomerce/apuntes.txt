@@ -1,0 +1,103 @@
+1. configuracion general:
+la primera vez que el admin inicie en el panel le pida los parametros de configuracion o que los deje por defecto
+configuracion de seguridad:
+bloquear al usuario despues de 5 intentos fallidos e incremente el tiempo 
+5+5*1 = 10 - 10 minutos
+10+10*2 = 30 - media hora
+30+30*3 = 180 - 3 horas
+180+180*4 = 1,440 - 1 dia
+1440+1440*5= 14,400 - 10 dias
+
+recuperar la cuenta mediante un codigo de 6 digitos una vez confirmado el usuario debe crear una nueva contraseña
+y diferente a la anterior
+
+obligar al usuario a crear contraseñas fuertes con una regex minimo 12 caracteres
+
+los usuarios pueden hacer 1200 solicitudes por dia 
+
+las cuentas se deben eliminar luego de dos años de inactividad
+configurar el monto que se pueden almacenar en los carritos de los clientes
+
+ descuentos por defecto pero seran configurables
+ 5 - 25
+ 25 - 40
+ 40 - 50
+
+2.  membresias:
+
+usuario pro: solo a descuentos se desciende despues de 5 meses de inactividad requirimiento en compras 120 - 200 dolares en compras para subir de rango 
+usuario platinum: acceso a productos exclusivos mas lo anterior se desciende despues de 8 meses y con requirimiento en compras 201 - 240 dolares en compras
+usuario gold: regalias mas lo anterior se desciende despues de 1 año requirimiento en compras  241 
+
+3. notificaciones:
+cuando un producto se vaya a vencer antes del tiempo configurado
+si hay productos sin vender 
+si hay productos mal valorados
+notificaciones semanales y mensuales sobre el monto de ventas 
+notificaciones semanales y mensuales sobre la cantidad de usuarios dados de baja 
+
+
+se usara usd
+
+4. metodos de pago 
+pay pal y tarjeta
+
+
+5. suscripcion de email
+se enviara un email con los productos que estan en descuento 
+o cuando haya un nuevo producto en mas popular
+
+6. bd 
+los id deben de estar encriptados
+guardar las url de las imagenes en el server
+
+7. server
+analisis de el espacio que va ocupando el proyecto
+
+8. productos
+configurar si tienen vencimiento
+agregar a la lista de descuentos 
+configurar descuentos automaticos si no poseen vencimientos los requisitos son:
+
+si un producto no se ha vendido minimo 5%  del stock
+despues de 3 meses de haber sido registrado se dara 10% de descuento
+
+si un producto no se ha vendido minimo 10%  del stock
+despues de 6 meses de haber sido registrado se dara 20% de descuento
+
+si un producto no se ha vendido minimo 15%  del stock
+despues de 9 meses de haber sido registrado se dara 45% de descuento 
+
+los descuentos personalizados los define el admin para los rangos y si hay un descuento automatico que lo edite
+o que lo elimine
+
+en los descuentos generales seran personalizados 
+
+9. home
+9.1 los productos se mostraran en secciones:
+9.1.1 principal: que son las mas vendidos la primera vez que el cliente visite el sitio se mostraran sin  importar la categoria
+pero si hace una busqueda cuando regrese se van a mostrar productos relacionados al que busco la ultima vez
+
+9.1.2 mejor puntuados
+
+9.1.3 por categoria en orden ascendente
+
+9.2 reseñas 
+deben mostrarse de forma descendente respecto a su puntuacion y antiguedad en la ventana que se muestra el producto maximo 10 
+
+
+usuario
+
+1. registro
+se solicita su nombres, apellidos, direccion, telefono, email,usuario,
+contraseña, pais, departamento o provincia, ciudad o municipio, codigo postal foto de perfil (opcional)
+
+el usuario solo puede dejar una reseña por producto y debe estar loggeado
+
+configuracion 
+
+resetear su contraseña
+el tema 
+si desea recibir correos con descuentos o nuevos productos
+editar sus datos actualizar un metodo de pago
+eliminar su perfil 
